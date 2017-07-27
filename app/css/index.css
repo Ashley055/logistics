@@ -392,8 +392,8 @@ body {
 .wrap .tab-content {
   float: left;
   color: #172c45;
-  max-width: 705px;
-  margin-left: 20px;
+  max-width: 720px;
+  margin-left: 30px;
 }
 .wrap .tab-content h2 {
   font-size: 32px;
@@ -401,6 +401,7 @@ body {
   padding-bottom: 15px;
   border-bottom: 1px solid #ccc;
   font-weight: bold;
+  max-width: 700px;
 }
 .wrap .tab-content .title {
   font-size: 16px;
@@ -408,11 +409,46 @@ body {
   font-weight: bold;
   margin-bottom: 41px;
 }
-.wrap .tab-content ul li {
+.wrap .tab-content ul.contentul li {
   margin-bottom: 41px;
 }
-.wrap .tab-content ul li dt {
+.wrap .tab-content ul.contentul li dt {
   font-weight: bold;
+}
+.wrap .tab-content .car-list {
+  font-size: 16px;
+  margin-top: 26px;
+}
+.wrap .tab-content .car-list li {
+  float: left;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 33%;
+}
+.wrap .tab-content .car-list li .imgpic img {
+  width: 100%;
+}
+.wrap .tab-content .car-list li p {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.wrap .tab-content .page-list {
+  margin: 10px 0 50px 0;
+}
+.wrap .tab-content .page-list li {
+  height: 34px;
+  border: 1px solid #d8dadf;
+  display: inline-block;
+  padding: 0 12px;
+  line-height: 34px;
+}
+.wrap .tab-content .page-list .current {
+  background: #ff6600;
+}
+.wrap .tab-content .page-list .current a {
+  color: #fff;
 }
 .foot {
   width: 100%;
@@ -447,7 +483,7 @@ body {
   height: 0;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   body {
     padding-top: 0;
     background: #e9e9f2;
@@ -489,12 +525,35 @@ body {
   }
   .wrap .tab-content {
     float: none;
+    margin-left: 0;
   }
   .wrap .tab-content h2 {
     display: none;
   }
   .wrap .tab-content .title {
     text-align: center;
+  }
+  .wrap .tab-content .car-list {
+    margin-left: 12px;
+  }
+  .wrap .tab-content .car-list li {
+    padding-right: 12px;
+  }
+  .wrap .tab-content .page-list {
+    padding: 0 10px;
+  }
+  .wrap .tab-content .page-list li {
+    display: none;
+  }
+  .wrap .tab-content .page-list li:first-child,
+  .wrap .tab-content .page-list li:last-child {
+    display: block;
+    float: left;
+    padding: 0 40px;
+    border-radius: 25px;
+  }
+  .wrap .tab-content .page-list li:last-child {
+    float: right;
   }
   .wrap-inner {
     background: #fff;
