@@ -1,0 +1,507 @@
+@charset "utf-8";
+/*公用样式*/
+/*基础颜色*/
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  font-family: "微软雅黑", "microsoft yahei", Arial, sans-serif;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+button,
+input,
+select,
+textarea {
+  font: 500 14px/1.8 "微软雅黑", "microsoft yahei", Arial, sans-serif;
+}
+/* IE6 Button 宽度自适应 */
+button,
+input {
+  *width: auto;
+  *overflow: visible;
+}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* IE bug fixed: th 不继承 text-align*/
+th {
+  text-align: inherit;
+}
+/* 去除默认边框 */
+fieldset,
+img {
+  border: 0;
+}
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+  display: block;
+}
+blockquote blockquote {
+  padding: 0 0 0 1em;
+  margin-left: 2em;
+  border-left: 0.4em solid #ddd;
+}
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym,
+abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help;
+}
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 400;
+}
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: '';
+}
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+  text-decoration: underline;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,
+a {
+  text-decoration: none;
+  color: #333;
+}
+u,
+.typo-u {
+  text-decoration: underline;
+}
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1;
+}
+/* 代码片断 */
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre {
+  border: 1px solid #ddd;
+  border-left-width: 0.4em;
+  background: #fbfbfb;
+  padding: 10px;
+}
+/* 底部印刷体、版本等标记 */
+small {
+  font-size: 12px;
+  color: #888;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-weight: 800 \9;
+  color: #333;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  outline: none;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="input"] {
+  -webkit-appearance: none;
+}
+select {
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  -webkit-appearance: menulist;
+  -webkit-box-sizing: border-box;
+  -webkit-box-align: center;
+  border: 1px solid;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: white;
+  cursor: default;
+}
+body {
+  font-size: 14px;
+  color: #666;
+}
+body {
+  padding-top: 13px;
+  background: url(../images/sidebg.png) no-repeat top right;
+  background-size: 45%;
+}
+.head {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.head .logo a {
+  display: inline-block;
+  width: 207px;
+}
+.head .logo a img {
+  width: 100%;
+}
+.menu {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+.menu .pmenu .items {
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid #0d4578;
+}
+.menu .pmenu .items a {
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #000;
+}
+.menu .pmenu .items .cmenu {
+  padding-left: 0;
+  position: absolute;
+  top: 36px;
+  display: none;
+}
+.menu .pmenu .items .cmenu li {
+  list-style: none;
+}
+.contact {
+  position: absolute;
+  top: 48px;
+  right: 50px;
+  width: 130px;
+  height: 120px;
+  padding-top: 70px;
+  padding-left: 15px;
+  background: url(../images/contactus.png) no-repeat center;
+  background-size: 100%;
+}
+.contact dl dd {
+  margin-left: 0;
+  color: #fff;
+}
+.top {
+  display: none;
+  width: 100%;
+  background-color: #2a8cff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.top .dir-left {
+  position: absolute;
+  width: 12px;
+  height: 50px;
+  top: 0;
+  left: 10px;
+}
+.top .dir-left img {
+  width: 100%;
+}
+.top .t-text {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.top .icon-home {
+  position: absolute;
+  height: 50px;
+  width: 23px;
+  right: 10px;
+  top: 0;
+}
+.top .icon-home img {
+  width: 100%;
+}
+.banner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.banner img {
+  width: 100%;
+}
+.mbanner {
+  display: none;
+  width: 100%;
+  margin-top: 50px;
+}
+.mbanner img {
+  width: 100%;
+}
+.wrap {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.wrap .side-tab {
+  float: left;
+  margin-top: -54px;
+}
+.wrap .side-tab ul {
+  border-bottom: 1px solid #cccccc;
+}
+.wrap .side-tab ul li {
+  padding: 15px 135px 15px 17px;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+}
+.wrap .side-tab ul li:first-child {
+  background-color: #063d76;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+.wrap .side-tab ul li:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+.wrap .tab-content {
+  float: left;
+  color: #172c45;
+  max-width: 705px;
+  margin-left: 20px;
+}
+.wrap .tab-content h2 {
+  font-size: 32px;
+  margin-top: 38px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.wrap .tab-content .title {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 41px;
+}
+.wrap .tab-content ul li {
+  margin-bottom: 41px;
+}
+.wrap .tab-content ul li dt {
+  font-weight: bold;
+}
+.foot {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #063d76;
+}
+.foot .inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.foot .inner ul {
+  float: left;
+}
+.foot .inner ul li {
+  display: inline-block;
+}
+.foot .inner ul li a {
+  color: #fff;
+}
+.foot .inner p {
+  float: right;
+  color: #fff;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  height: 0;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 0;
+    background: #e9e9f2;
+  }
+  .m-hide {
+    display: none !important;
+  }
+  .head,
+  .banner {
+    display: none;
+  }
+  .top,
+  .mbanner {
+    display: block;
+  }
+  .wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+  }
+  .wrap .side-tab {
+    float: none;
+    margin-top: 12px;
+  }
+  .wrap .side-tab ul li {
+    display: inline-block;
+    padding: 0 20px;
+    background: #fff;
+    color: #5b626c;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 20px;
+    margin-left: 7px;
+    border: 1px solid #cccccc;
+    margin-bottom: 8px;
+  }
+  .wrap .tab-content {
+    float: none;
+  }
+  .wrap .tab-content h2 {
+    display: none;
+  }
+  .wrap .tab-content .title {
+    text-align: center;
+  }
+  .wrap-inner {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 5px;
+  }
+  .foot {
+    display: none;
+  }
+}

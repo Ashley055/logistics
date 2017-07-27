@@ -44,7 +44,9 @@ module.exports = function(grunt) {
 					paths: ['<%= config.app %>/']
 				},
 				files: {
-					'<%= config.app %>/css/index.css': '<%= config.app %>/less/alltype.less',
+					'<%= config.app %>/css/index.css': '<%= config.app %>/less/index.less',
+					'<%= config.app %>/css/logistics.css': '<%= config.app %>/less/logistics.less',
+					'<%= config.app %>/css/main.css': '<%= config.app %>/less/main.less',
 					'<%= config.app %>/css/fang.css': '<%= config.app %>/less/fang.less',
 				}
 			}
