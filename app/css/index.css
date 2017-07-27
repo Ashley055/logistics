@@ -549,7 +549,7 @@ body {
   .wrap .tab-content .page-list li:last-child {
     display: block;
     float: left;
-    padding: 0 40px;
+    padding: 0 35px;
     border-radius: 25px;
   }
   .wrap .tab-content .page-list li:last-child {
