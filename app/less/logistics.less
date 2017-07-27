@@ -61,7 +61,7 @@
 	float: left;
 	max-width: 300px;
 	width: 100%;
-	h2{
+	h3{
 		font-size: 23px;
 		margin-bottom: 10px;
 		margin-top: 15px;
@@ -81,7 +81,7 @@
 				a{
 					font-size: 12px;
 					line-height: 26px;
-					span{
+					span.line-name{
 						margin-right: 25px;
 					}
 				}
@@ -105,7 +105,7 @@
 		}
 	}
 }
-.m-menu,.news,.til{
+.m-menu,.news, .shipping-cars{
 	display: none;
 }
 .dir-right{
@@ -168,19 +168,9 @@
 		}
 	}
 	.left{
+		float: none;
 		h3{
 			display: none;
-		}
-		.til{
-			display: block;
-			h3{
-				display: block;
-				font-size: 18px;
-				color: #666;
-				margin-top: 8px;
-				margin-bottom: 8px;
-				float: left;
-			}
 		}
 		.news-list{
 			background-color: #fff;
@@ -213,5 +203,69 @@
 	}
 	.middle{
 		display: none;
+	}
+	.right{
+		float: none;
+		margin: 0;
+		max-width: 100%;
+		h3{
+			display: none;
+		}
+		.newlest{
+			display: none;
+		}
+		.shipping-lines{
+			.line-list{
+				background-color: #fff;
+				margin-left: -10px;
+				margin-right: -10px;
+				padding-left: 15px;
+				padding-right: 15px;
+				li{
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #e9e9f2;
+					.line-name{
+						display: block;
+						font-size: 16px;
+						line-height: 35px;
+					}
+					.callforD{
+						color: #666;
+						font-size: 14px;
+					}
+					.phone{
+						color: #ff6600;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.shipping-cars{
+		display: block;
+	}
+	.foot-wrap{
+		margin-top: 0;
+		.tab-head{
+			li.vehicle{
+				display: block;
+				font-size: 18px;
+				color: #666;
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+	.til{
+		display: block;
+		h3{
+			display: block;
+			font-size: 18px;
+			color: #666;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			float: left;
+		}
 	}
 }

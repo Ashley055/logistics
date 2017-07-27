@@ -56,7 +56,7 @@
   max-width: 300px;
   width: 100%;
 }
-.right h2 {
+.right h3 {
   font-size: 23px;
   margin-bottom: 10px;
   margin-top: 15px;
@@ -72,7 +72,7 @@
   font-size: 12px;
   line-height: 26px;
 }
-.right .shipping-lines ul li a span {
+.right .shipping-lines ul li a span.line-name {
   margin-right: 25px;
 }
 .foot-wrap {
@@ -91,7 +91,7 @@
 }
 .m-menu,
 .news,
-.til {
+.shipping-cars {
   display: none;
 }
 .dir-right {
@@ -149,19 +149,11 @@
   .wrap-inner .news a .cir-right img {
     width: 100%;
   }
+  .left {
+    float: none;
+  }
   .left h3 {
     display: none;
-  }
-  .left .til {
-    display: block;
-  }
-  .left .til h3 {
-    display: block;
-    font-size: 18px;
-    color: #666;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    float: left;
   }
   .left .news-list {
     background-color: #fff;
@@ -189,5 +181,65 @@
   }
   .middle {
     display: none;
+  }
+  .right {
+    float: none;
+    margin: 0;
+    max-width: 100%;
+  }
+  .right h3 {
+    display: none;
+  }
+  .right .newlest {
+    display: none;
+  }
+  .right .shipping-lines .line-list {
+    background-color: #fff;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .right .shipping-lines .line-list li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9f2;
+  }
+  .right .shipping-lines .line-list li .line-name {
+    display: block;
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .right .shipping-lines .line-list li .callforD {
+    color: #666;
+    font-size: 14px;
+  }
+  .right .shipping-lines .line-list li .phone {
+    color: #ff6600;
+    font-size: 14px;
+  }
+  .shipping-cars {
+    display: block;
+  }
+  .foot-wrap {
+    margin-top: 0;
+  }
+  .foot-wrap .tab-head li.vehicle {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .til {
+    display: block;
+  }
+  .til h3 {
+    display: block;
+    font-size: 18px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: left;
   }
 }
