@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>华新物流</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- endbuild -->
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul class="pmenu">
+                <li class="items"><a href="">首页</a></li>
+                <li class="items">
+                    <a href="">公司简介</a>
+                    <ul class="cmenu">
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">服务标准</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="items"><a href="">服务项目</a></li>
+                <li class="items"><a href="">新闻资讯</a></li>
+                <li class="items"><a href="">运输路线</a></li>
+                <li class="items"><a href="">运输车型</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>186-5555-8888</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="top">
+        <div class="dir-left"><img src="images/dir-left.png"></div>
+        <div class="t-text">服务项目</div>
+        <a class="icon-home"><img src="images/home.png"></a>
+    </div>
+    <!--头部 end-->
+    <!--广告位-->
+    <div class="banner">
+        <img src="images/contactus.jpg">
+    </div>
+    <div class="mbanner">
+        <img src="images/mbanner.png">
+    </div>
+    <!--广告位 end-->
+    <div class="wrap clearfix">
+        <div class="wrap-inner clearfix">
+            <div class="side-tab">
+                <ul>
+                    <li class="m-hide">公司简介</li>
+                    <li class="active">公司简介</li>
+                    <li>服务标准</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <h2>公司简介</h2>
+                <p class="paragraph">
+                    福建鑫平安物流有限公司是专门从事物流服务的专业化企业，商品车运输等业务,逐步形成以公路为主，服务范围覆盖全国各大中小城市.实现了诚信、准时、安全、便利的服务目标、赢得了全国广大客户的支持和信赖.经过多年运营积累了丰富的行业经验。
+                </p>
+                <div class="introduction">
+                    <dl class="mainbiz">
+                        <dt>主营业务：</dt>
+                        <dd>本公司专业从事公路货物运输及仓储配送服务，已开通福州至南昌、长沙、武汉、合肥、郑州、西安、重庆、成都等城市以及全国各地的整车与零担货快运专线。</dd>
+                    </dl>
+                </div>
+                <div class="introduction">
+                    <dl>
+                        <dt>企业宗旨：</dt>
+                        <dd>以物为根，铸物流名牌；</dd>
+                        <dd>以人为本，创行业一流。</dd>
+                    </dl>
+                </div>
+                <div class="introduction">
+                    <dl>
+                        <dt>服务标准：</dt>
+                        <dd>取 货：本公司接到客户委托后两个小时内安排相关人员，上门取货。</dd>
+                        <dd>发 货：所有货物均按照不同的运输方式当天上站、当天发车。 </dd>
+                        <dd>派 送：货到之后立即通报收货人、按时送货上门。</dd>
+                        <dd>包 装：严格遵照外包装图标要求进行包装、整理。 </dd>
+                        <dd>安 全：公司已买有年保，所有承运货物都有相应的保险。</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="foot">
+        <div class="inner">
+            <ul>
+                <li><a href="">全国专线</a></li>
+                <li><a href="">大件运输</a></li>
+                <li><a href="">搬家行李</a></li>
+                <li><a href="">货物配送</a></li>
+                <li><a href="">工地服务</a></li>
+                <li><a href="">仓储业务</a></li>
+            </ul>
+            <p>福建鑫平安物流有限公司 网站备案号：ICP备1231548754号 </p>
+        </div>
+    </div>
+    <!-- build:js js/app.lib.js -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <!-- endbuild -->
+    <!-- <script>
+        $(function(){
+           $('#searchText').focus(function(){
+               if($(this).val()=='请输搜索入内容'){
+                   $(this).val('');
+               }
+           });
+            $('#searchText').blur(function() {
+                if($(this).val()==''){
+                    $(this).val('请输搜索入内容');
+                    $(this).removeClass('focus');
+                }else{
+                    $(this).addClass('focus');
+                }
+            });
+
+            //flash
+            $('.flexslider').flexslider({
+                animation: 'slide',
+                pauseOnHover: true,
+                directionNav: false,
+                slideshowSpeed:3000
+            });
+
+            //tab
+            (function () {
+                $('.tap-head').each(function(index, el) {
+                    if ($(el).hasClass('hover')) {
+                        $(el).on('mouseenter', 'li', function(){
+                            showTab(this);
+                        });
+                    } else {
+                        $(el).on('click', 'li', function(){
+                            showTab(this);
+                        });
+                    }
+                });
+
+                function showTab(el) {
+                    var index = $(el).index();
+                    $(el).addClass('current').siblings().removeClass('current');
+                    $(el).parents('.tap-head').siblings('.tap-body').children('div').eq(index).addClass('current').siblings().removeClass('current');
+                }
+            })();
+
+            // video hover
+            $('.video-list li').mouseenter(function(){
+                $(this).addClass('current').siblings().removeClass('current');
+            });
+            
+        });
+    </script> -->
+</body>
+</html>

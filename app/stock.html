@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>华新物流</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- endbuild -->
+</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul class="pmenu">
+                <li class="items"><a href="">首页</a></li>
+                <li class="items">
+                    <a href="">公司简介</a>
+                    <ul class="cmenu">
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">服务标准</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="items"><a href="">服务项目</a></li>
+                <li class="items"><a href="">新闻资讯</a></li>
+                <li class="items"><a href="">运输路线</a></li>
+                <li class="items"><a href="">运输车型</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>186-5555-8888</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="top">
+        <div class="dir-left"><img src="images/dir-left.png"></div>
+        <div class="t-text">服务项目</div>
+        <a class="icon-home"><img src="images/home.png"></a>
+    </div>
+    <!--头部 end-->
+    <!--广告位-->
+    <div class="banner">
+        <img src="images/banner.png">
+    </div>
+    <div class="mbanner">
+        <img src="images/mbanner.png">
+    </div>
+    <!--广告位 end-->
+    <div class="wrap clearfix">
+        <div class="wrap-inner clearfix">
+            <div class="side-tab">
+                <ul>
+                    <li class="m-hide">服务项目</li>
+                    <li>全国专线</li>
+                    <li>大件运输</li>
+                    <li>搬家行李</li>
+                    <li>货物配送</li>
+                    <li>工地服务</li>
+                    <li class="active">仓储业务</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <h2>仓储业务</h2>
+                <h4 class="sub-title stock">仓储业务</h4>
+                <p class="stolp">
+                        仓储是一些用作储存货物的建筑物。仓储是服务于生产商、商品供应商、物流组织。为方便合
+                    作，仓储通常邻近码头、火车站、飞机场等。“仓储”则为利用仓库存放、储存未即时使用的物品
+                    的行为。 是组织、衔接、调节、管理物流的较大的据点。按保管形态分为普通仓储、冷藏仓储、
+                    恒温仓储、露天仓储、危险品仓储。
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="foot">
+        <div class="inner">
+            <ul>
+                <li><a href="">全国专线</a></li>
+                <li><a href="">大件运输</a></li>
+                <li><a href="">搬家行李</a></li>
+                <li><a href="">货物配送</a></li>
+                <li><a href="">工地服务</a></li>
+                <li><a href="">仓储业务</a></li>
+            </ul>
+            <p>福建鑫平安物流有限公司 网站备案号：ICP备1231548754号 </p>
+        </div>
+    </div>
+    <!-- build:js js/app.lib.js -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <!-- endbuild -->
+    <!-- <script>
+        $(function(){
+           $('#searchText').focus(function(){
+               if($(this).val()=='请输搜索入内容'){
+                   $(this).val('');
+               }
+           });
+            $('#searchText').blur(function() {
+                if($(this).val()==''){
+                    $(this).val('请输搜索入内容');
+                    $(this).removeClass('focus');
+                }else{
+                    $(this).addClass('focus');
+                }
+            });
+
+            //flash
+            $('.flexslider').flexslider({
+                animation: 'slide',
+                pauseOnHover: true,
+                directionNav: false,
+                slideshowSpeed:3000
+            });
+
+            //tab
+            (function () {
+                $('.tap-head').each(function(index, el) {
+                    if ($(el).hasClass('hover')) {
+                        $(el).on('mouseenter', 'li', function(){
+                            showTab(this);
+                        });
+                    } else {
+                        $(el).on('click', 'li', function(){
+                            showTab(this);
+                        });
+                    }
+                });
+
+                function showTab(el) {
+                    var index = $(el).index();
+                    $(el).addClass('current').siblings().removeClass('current');
+                    $(el).parents('.tap-head').siblings('.tap-body').children('div').eq(index).addClass('current').siblings().removeClass('current');
+                }
+            })();
+
+            // video hover
+            $('.video-list li').mouseenter(function(){
+                $(this).addClass('current').siblings().removeClass('current');
+            });
+            
+        });
+    </script> -->
+</body>
+</html>

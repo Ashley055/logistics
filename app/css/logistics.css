@@ -91,13 +91,14 @@
 }
 .m-menu,
 .news,
-.shipping-cars {
+.shipping-cars,
+.car-name {
   display: none;
 }
 .dir-right {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .wrap-inner {
     padding-top: 17px;
   }
@@ -151,6 +152,7 @@
   }
   .left {
     float: none;
+    max-width: 100%;
   }
   .left h3 {
     display: none;
@@ -159,7 +161,7 @@
     background-color: #fff;
     margin-left: -10px;
     margin-right: -10px;
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
   .left .news-list li dt {
     color: #333;
@@ -169,15 +171,6 @@
   }
   .left .news-list li dd .lines .more {
     display: none;
-  }
-  .left .dir-right {
-    display: inline-block;
-    float: right;
-    width: 8px;
-    margin-top: 15px;
-  }
-  .left .dir-right img {
-    width: 100%;
   }
   .middle {
     display: none;
@@ -224,6 +217,9 @@
   .foot-wrap {
     margin-top: 0;
   }
+  .foot-wrap .tab-head {
+    margin-bottom: 0;
+  }
   .foot-wrap .tab-head li.vehicle {
     display: block;
     font-size: 18px;
@@ -231,12 +227,39 @@
     margin-top: 8px;
     margin-bottom: 8px;
     position: relative;
+    margin-right: 0;
   }
   .foot-wrap .tab-head li.vehicle a {
     display: block !important;
     width: 100%;
-    height: 24px;
+    height: 100%;
     position: absolute;
+  }
+  .foot-wrap .tab-head li.vehicle .dir-right {
+    margin-top: 0;
+  }
+  .foot-wrap .tab-content .car-list {
+    margin-right: -10px;
+    background-color: #fff;
+    margin-left: -10px;
+    padding: 10px 0 15px 10px;
+  }
+  .foot-wrap .tab-content .car-list li {
+    display: block;
+    float: left;
+    padding: 10px 10px 0 0;
+    width: 33%;
+    box-sizing: border-box;
+  }
+  .foot-wrap .tab-content .car-list li img {
+    width: 100%;
+  }
+  .foot-wrap .tab-content .car-list li p {
+    margin-top: 10px;
+  }
+  .foot-wrap .tab-content .car-list li p a {
+    display: block;
+    text-align: center;
   }
   .til {
     display: block;
@@ -248,5 +271,17 @@
     margin-top: 8px;
     margin-bottom: 8px;
     float: left;
+  }
+  .dir-right {
+    display: inline-block;
+    float: right;
+    width: 8px;
+    margin-top: 15px;
+  }
+  .dir-right img {
+    width: 100%;
+  }
+  .car-name {
+    display: block;
   }
 }
