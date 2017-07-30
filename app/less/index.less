@@ -334,7 +334,7 @@ body{
 }
 .contact{
 	position: absolute;
-	top: 48px;
+	top: 38px;
 	right: 50px;
 	width: 130px;
 	height: 120px;
@@ -418,12 +418,14 @@ body{
 				padding: 15px 135px 15px 17px;
 				border: 1px solid #cccccc;
 				border-bottom: none;
+				cursor: pointer;
 			}
 			li:first-child{
 				background-color: #063d76;
 				font-size: 16px;
 				color: #fff;
 				border: none;
+				cursor: default;
 			}
 			li:last-child{
 				border-bottom: 1px solid #cccccc;
@@ -884,6 +886,11 @@ body{
 					box-sizing: border-box;
 					line-height: 23px;
 					font-size: 12px;
+					span{
+						display: block;
+						max-height: 40px;
+						overflow: hidden;
+					}
 					.more{
 						display: block;
 						margin-top: 8px;
@@ -926,11 +933,8 @@ body{
 			line-height: 23px;
 			font-size: 12px;
 			color: #172c45;
-		}
-		.more{
-			display: block;
-			margin-top: 13px;
-			margin-bottom: 16px;
+			max-height: 115px;
+			overflow: hidden;
 		}
 	}
 	.shipping-lines{
@@ -946,6 +950,11 @@ body{
 			}
 		}
 	}
+}
+.more{
+	display: block;
+	margin-top: 13px;
+	margin-bottom: 16px;
 }
 .foot-wrap{
 	margin-top: 40px;
@@ -1047,7 +1056,7 @@ body{
 		h3{
 			display: none;
 		}
-		.news-list{
+		.news-list.newslistl{
 			background-color: #fff;
 			margin-left: -10px;
 			margin-right: -10px;
