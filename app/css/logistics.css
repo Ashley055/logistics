@@ -261,6 +261,9 @@
     display: block;
     text-align: center;
   }
+  .foot-wrap .tab-content .car-list li:nth-child(4) {
+    display: none;
+  }
   .til {
     display: block;
   }

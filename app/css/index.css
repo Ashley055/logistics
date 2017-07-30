@@ -612,6 +612,7 @@ body {
   body {
     padding-top: 0;
     background: #e9e9f2;
+    font-size: 14px;
   }
   .m-hide {
     display: none !important;
