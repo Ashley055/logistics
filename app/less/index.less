@@ -517,11 +517,34 @@ body{
 		}
 		.carpic{
 			text-align: center;
-			.pre{
-				float: left;
-				margin-right: 75px;
-				margin-top: 160px;
+			position: relative;
+			.flex-prev{
+				width: 27px;
+				height: 45px;
+				position: absolute;
 				cursor: pointer;
+				background: url('../images/pre.png') no-repeat;
+				left:10px;
+				top:160px;
+				font-size: 0;
+				z-index: 100;
+			}
+			.flex-prev:hover{
+				background: url('../images/preh.png') no-repeat;
+			}
+			.flex-next{
+				width: 27px;
+				height: 45px;
+				position: absolute;
+				cursor: pointer;
+				background: url('../images/next.png') no-repeat;
+				right:10px;
+				top:160px;
+				font-size: 0;
+				z-index: 100;
+			}
+			.flex-next:hover{
+				background: url('../images/nexth.png') no-repeat;
 			}
 			.pic{
 				float: left;
@@ -786,9 +809,13 @@ body{
 			.carpic{
 				.pic{
 					padding: 20px 40px;
+					box-sizing: border-box;
 					img{
 						width: 100%;
 					}
+				}
+				.flex-prev, .flex-next{
+					display: none !important;
 				}
 			}
 			.page-list{

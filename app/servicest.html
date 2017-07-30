@@ -95,58 +95,8 @@
     </div>
     <!-- build:js js/app.lib.js -->
     <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <!-- endbuild -->
-    <!-- <script>
-        $(function(){
-           $('#searchText').focus(function(){
-               if($(this).val()=='请输搜索入内容'){
-                   $(this).val('');
-               }
-           });
-            $('#searchText').blur(function() {
-                if($(this).val()==''){
-                    $(this).val('请输搜索入内容');
-                    $(this).removeClass('focus');
-                }else{
-                    $(this).addClass('focus');
-                }
-            });
 
-            //flash
-            $('.flexslider').flexslider({
-                animation: 'slide',
-                pauseOnHover: true,
-                directionNav: false,
-                slideshowSpeed:3000
-            });
-
-            //tab
-            (function () {
-                $('.tap-head').each(function(index, el) {
-                    if ($(el).hasClass('hover')) {
-                        $(el).on('mouseenter', 'li', function(){
-                            showTab(this);
-                        });
-                    } else {
-                        $(el).on('click', 'li', function(){
-                            showTab(this);
-                        });
-                    }
-                });
-
-                function showTab(el) {
-                    var index = $(el).index();
-                    $(el).addClass('current').siblings().removeClass('current');
-                    $(el).parents('.tap-head').siblings('.tap-body').children('div').eq(index).addClass('current').siblings().removeClass('current');
-                }
-            })();
-
-            // video hover
-            $('.video-list li').mouseenter(function(){
-                $(this).addClass('current').siblings().removeClass('current');
-            });
-            
-        });
-    </script> -->
 </body>
 </html>
