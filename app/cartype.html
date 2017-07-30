@@ -68,17 +68,17 @@
                 <h2 class="m-hide">运输车型</h2>
                 <div class="content-info">
                     <h3 class="title cartil">中型货车</h3>
-                    <div class="carpic clearfix">
-                        <div class="pre m-hide">
-                            <img src="images/pre.png">
-                        </div>
-                        <div class="pic">
-                            <img src="images/carm.jpg" alt="">
-                        </div>
-                        <div class="next m-hide">
-                            <img src="images/next.png" alt="">
-                        </div>
-                    </div> 
+                    <div class="flexslider carpic">
+                        <ul class="slides clearfix">
+                            <li class="pic">
+                                <img src="images/carm.jpg" alt="">
+                            </li>
+                            <li class="pic">
+                                <img src="images/carm.jpg" alt="">
+                            </li>
+                        </ul> 
+                    </div>
+                    
                     <div class="carinfo m-hide">
                         <p>货车型号：长：10M x 宽3M x 高3M</p>
                         <p>和载重量：5吨</p>
@@ -129,58 +129,16 @@
     </div>
     <!-- build:js js/app.lib.js -->
     <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <!-- endbuild -->
-    <!-- <script>
-        $(function(){
-           $('#searchText').focus(function(){
-               if($(this).val()=='请输搜索入内容'){
-                   $(this).val('');
-               }
-           });
-            $('#searchText').blur(function() {
-                if($(this).val()==''){
-                    $(this).val('请输搜索入内容');
-                    $(this).removeClass('focus');
-                }else{
-                    $(this).addClass('focus');
-                }
-            });
+    <script type="text/javascript">
+        
+        $(function() { 
+            $(".flexslider").flexslider({
+                controlNav: false
+            }); 
+        }); 
 
-            //flash
-            $('.flexslider').flexslider({
-                animation: 'slide',
-                pauseOnHover: true,
-                directionNav: false,
-                slideshowSpeed:3000
-            });
-
-            //tab
-            (function () {
-                $('.tap-head').each(function(index, el) {
-                    if ($(el).hasClass('hover')) {
-                        $(el).on('mouseenter', 'li', function(){
-                            showTab(this);
-                        });
-                    } else {
-                        $(el).on('click', 'li', function(){
-                            showTab(this);
-                        });
-                    }
-                });
-
-                function showTab(el) {
-                    var index = $(el).index();
-                    $(el).addClass('current').siblings().removeClass('current');
-                    $(el).parents('.tap-head').siblings('.tap-body').children('div').eq(index).addClass('current').siblings().removeClass('current');
-                }
-            })();
-
-            // video hover
-            $('.video-list li').mouseenter(function(){
-                $(this).addClass('current').siblings().removeClass('current');
-            });
-            
-        });
-    </script> -->
+    </script>
 </body>
 </html>
