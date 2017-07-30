@@ -313,6 +313,9 @@ body {
   display: block;
   font-size: 14px;
 }
+.menu .pmenu .items .cmenu li a:hover {
+  color: #fff;
+}
 .menu .pmenu .items .cmenu li:hover {
   background: #ff6600;
 }
