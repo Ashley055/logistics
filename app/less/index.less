@@ -1017,7 +1017,9 @@ body{
 							width: 100%;
 						}
 					}
-					
+					span{
+						font-size: 13px;
+					}
 				}
 			}
 		}
@@ -1060,14 +1062,30 @@ body{
 			background-color: #fff;
 			margin-left: -10px;
 			margin-right: -10px;
-			padding: 20px 10px;
+			padding: 0px 10px;
 			li{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-bottom: 0;
+				border-bottom: 1px solid #e9e9f2;
 				dt{
 					color: #333;
+					font-size: 16px;
+					font-weight: normal;
 				}
 				dd{
+					.date{
+						padding-top: 5px;
+						padding-bottom: 5px;
+						font-size: 14px;
+						.year{
+							color: #ccc;
+						}
+					}
 					.lines{
 						max-width: 256px;
+						font-size: 13px;
+						color: #666;
 						.more{
 							display: none;
 						}

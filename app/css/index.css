@@ -970,6 +970,9 @@ body {
   .wrap-inner .m-menu ul li .icon img {
     width: 100%;
   }
+  .wrap-inner .m-menu ul li span {
+    font-size: 13px;
+  }
   .wrap-inner .news {
     display: block;
     padding-left: 5px;
@@ -1007,13 +1010,31 @@ body {
     background-color: #fff;
     margin-left: -10px;
     margin-right: -10px;
-    padding: 20px 10px;
+    padding: 0px 10px;
+  }
+  .left .news-list.newslistl li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e9e9f2;
   }
   .left .news-list.newslistl li dt {
     color: #333;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .left .news-list.newslistl li dd .date {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  .left .news-list.newslistl li dd .date .year {
+    color: #ccc;
   }
   .left .news-list.newslistl li dd .lines {
     max-width: 256px;
+    font-size: 13px;
+    color: #666;
   }
   .left .news-list.newslistl li dd .lines .more {
     display: none;
