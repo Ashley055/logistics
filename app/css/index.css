@@ -327,7 +327,7 @@ body {
 }
 .contact {
   position: absolute;
-  top: 48px;
+  top: 38px;
   right: 50px;
   width: 130px;
   height: 120px;
@@ -848,6 +848,11 @@ body {
   line-height: 23px;
   font-size: 12px;
 }
+.left .news-list.newslistl li dd .lines span {
+  display: block;
+  max-height: 40px;
+  overflow: hidden;
+}
 .left .news-list.newslistl li dd .lines .more {
   display: block;
   margin-top: 8px;
@@ -883,11 +888,8 @@ body {
   line-height: 23px;
   font-size: 12px;
   color: #172c45;
-}
-.right .newlest .more {
-  display: block;
-  margin-top: 13px;
-  margin-bottom: 16px;
+  max-height: 115px;
+  overflow: hidden;
 }
 .right .shipping-lines ul li a {
   font-size: 12px;
@@ -895,6 +897,11 @@ body {
 }
 .right .shipping-lines ul li a span.line-name {
   margin-right: 25px;
+}
+.more {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 16px;
 }
 .foot-wrap {
   margin-top: 40px;

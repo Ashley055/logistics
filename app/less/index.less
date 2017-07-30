@@ -334,7 +334,7 @@ body{
 }
 .contact{
 	position: absolute;
-	top: 48px;
+	top: 38px;
 	right: 50px;
 	width: 130px;
 	height: 120px;
@@ -884,6 +884,11 @@ body{
 					box-sizing: border-box;
 					line-height: 23px;
 					font-size: 12px;
+					span{
+						display: block;
+						max-height: 40px;
+						overflow: hidden;
+					}
 					.more{
 						display: block;
 						margin-top: 8px;
@@ -926,11 +931,8 @@ body{
 			line-height: 23px;
 			font-size: 12px;
 			color: #172c45;
-		}
-		.more{
-			display: block;
-			margin-top: 13px;
-			margin-bottom: 16px;
+			max-height: 115px;
+			overflow: hidden;
 		}
 	}
 	.shipping-lines{
@@ -946,6 +948,11 @@ body{
 			}
 		}
 	}
+}
+.more{
+	display: block;
+	margin-top: 13px;
+	margin-bottom: 16px;
 }
 .foot-wrap{
 	margin-top: 40px;
