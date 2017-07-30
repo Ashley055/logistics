@@ -1065,30 +1065,30 @@ body {
   .foot-wrap .tab-head li.vehicle .dir-right {
     margin-top: 0;
   }
-  .foot-wrap .tab-content .car-list {
+  .foot-wrap .tab-contenth .hcartype {
     margin-right: -10px;
     background-color: #fff;
     margin-left: -10px;
     padding: 10px 0 15px 10px;
   }
-  .foot-wrap .tab-content .car-list li {
+  .foot-wrap .tab-contenth .hcartype li {
     display: block;
     float: left;
     padding: 10px 10px 0 0;
     width: 33%;
     box-sizing: border-box;
   }
-  .foot-wrap .tab-content .car-list li img {
+  .foot-wrap .tab-contenth .hcartype li img {
     width: 100%;
   }
-  .foot-wrap .tab-content .car-list li p {
+  .foot-wrap .tab-contenth .hcartype li p {
     margin-top: 10px;
   }
-  .foot-wrap .tab-content .car-list li p a {
+  .foot-wrap .tab-contenth .hcartype li p a {
     display: block;
     text-align: center;
   }
-  .foot-wrap .tab-content .car-list.home li:nth-child(4) {
+  .foot-wrap .tab-contenth .hcartype li:nth-child(4) {
     display: none;
   }
   .til {
