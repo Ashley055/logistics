@@ -576,11 +576,11 @@ body {
   position: absolute;
   margin-right: 5px;
 }
-.wrap .tab-content .news-list li .news {
+.wrap .tab-content .news-list li .news-a {
   box-sizing: border-box;
   padding-left: 10px;
 }
-.wrap .tab-content .news-list li .news a {
+.wrap .tab-content .news-list li .news-a a {
   display: block;
   color: #172c45;
   text-overflow: ellipsis;
@@ -588,7 +588,7 @@ body {
   overflow: hidden;
   height: 40px;
 }
-.wrap .tab-content .news-list li .news a:hover {
+.wrap .tab-content .news-list li .news-a a:hover {
   color: #ff6600;
 }
 .wrap .tab-content .title.feature-title {
@@ -846,7 +846,12 @@ body {
     padding-bottom: 5px;
   }
   .foot {
-    display: none;
+    background: none;
+  }
+  .foot .inner p {
+    color: #999;
+    float: none;
+    text-align: center;
   }
 }
 .left {
@@ -1003,7 +1008,7 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .wrap-inner {
-    padding-top: 17px;
+    padding-top: 0px;
   }
   .wrap-inner .m-menu {
     display: block;
@@ -1170,6 +1175,9 @@ body {
   }
   .foot-wrap .tab-head li.vehicle .dir-right {
     margin-top: 0;
+  }
+  .foot-wrap .tab-contenth {
+    margin-bottom: 0;
   }
   .foot-wrap .tab-contenth .hcartype {
     margin-right: -10px;
