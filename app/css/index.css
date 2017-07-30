@@ -509,6 +509,7 @@ body {
   float: left;
   margin-right: 75px;
   margin-top: 160px;
+  cursor: pointer;
 }
 .wrap .tab-content .carpic .pic {
   float: left;
@@ -516,6 +517,11 @@ body {
 .wrap .tab-content .carpic .next {
   float: right;
   margin-top: 160px;
+  cursor: pointer;
+}
+.wrap .tab-content .carinfo {
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 .wrap .tab-content .page-list {
   margin: 10px 0 50px 0;
@@ -747,6 +753,15 @@ body {
   }
   .wrap .tab-content .car-list li {
     padding-right: 12px;
+  }
+  .wrap .tab-content .cartil {
+    margin-bottom: 0;
+  }
+  .wrap .tab-content .carpic .pic {
+    padding: 20px 40px;
+  }
+  .wrap .tab-content .carpic .pic img {
+    width: 100%;
   }
   .wrap .tab-content .page-list {
     padding: 0 10px;
@@ -1015,7 +1030,7 @@ body {
   .wrap-inner .news a .cir-right img {
     width: 100%;
   }
-  .wrap-inner.indinner {
+  .wrap-inner.pt0 {
     padding-top: 0;
   }
   .left {
