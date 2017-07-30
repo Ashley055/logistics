@@ -906,15 +906,25 @@ body {
   display: inline-block;
   font-size: 26px;
   margin-right: 43px;
+  cursor: pointer;
+}
+.foot-wrap .tab-head .current {
+  color: #ff6600;
 }
 .foot-wrap .tab-contenth {
   max-width: 100%;
   margin-bottom: 50px;
 }
+.foot-wrap .tab-contenth > div {
+  display: none;
+}
 .foot-wrap .tab-contenth .hcartype li {
   display: inline-block;
   width: 24%;
   box-sizing: border-box;
+}
+.foot-wrap .tab-contenth .current {
+  display: block;
 }
 .m-menu,
 .news,

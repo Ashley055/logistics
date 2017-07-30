@@ -166,30 +166,72 @@
         <div class="foot-wrap">
             <div class="tab-head">
                 <ul>
-                    <li class="vehicle"><a class="m-hide" href="#"></a>运输车型 <em class="dir-right"><img src="images/dir-right.png"></em></li>
+                    <li class="vehicle" class="current"><a class="m-hide" href="#"></a>运输车型 <em class="dir-right"><img src="images/dir-right.png"></em></li>
                     <li class="m-hide">服务项目</li>
                     <li class="m-hide">运输线路</li>
                 </ul>
             </div>
             <div class="tab-contenth">
-                <ul class="hcartype clearfix">
-                    <li>
-                     <div class="car-pic"><a href=""><img src="images/car1.jpg"></a></div>
-                     <p class="car-name"><a href="">中型货车</a></p>
-                    </li>
-                    <li>
-                        <div class="car-pic"><a href=""><img src="images/car2.jpg"></a></div>
-                        <p class="car-name"><a href="">中型货车</a></p>
-                    </li>
-                    <li>
-                        <div class="car-pic"><a href=""><img src="images/car3.jpg"></a></div>
-                        <p class="car-name"><a href="">中型货车</a></p>
-                    </li>
-                    <li>
-                        <div class="car-pic"><a href=""><img src="images/car4.jpg"></a></div>
-                        <p class="car-name"><a href="">中型货车</a></p>
-                    </li>
-                </ul>
+                <div class="current">
+                    <ul class="hcartype clearfix">
+                        <li>
+                         <div class="car-pic"><a href=""><img src="images/car1.jpg"></a></div>
+                         <p class="car-name"><a href="">中型货车</a></p>
+                        </li>
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car2.jpg"></a></div>
+                            <p class="car-name"><a href="">中型货车</a></p>
+                        </li>
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car3.jpg"></a></div>
+                            <p class="car-name"><a href="">中型货车</a></p>
+                        </li>
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car4.jpg"></a></div>
+                            <p class="car-name"><a href="">中型货车</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                   <ul class="hcartype clearfix">
+                       <li>
+                           <div class="car-pic"><a href=""><img src="images/car2.jpg"></a></div>
+                           <p class="car-name"><a href="">服务项目</a></p>
+                       </li>
+                       <li>
+                        <div class="car-pic"><a href=""><img src="images/car1.jpg"></a></div>
+                        <p class="car-name"><a href="">服务项目</a></p>
+                       </li>
+                       <li>
+                           <div class="car-pic"><a href=""><img src="images/car3.jpg"></a></div>
+                           <p class="car-name"><a href="">服务项目</a></p>
+                       </li>
+                       <li>
+                           <div class="car-pic"><a href=""><img src="images/car4.jpg"></a></div>
+                           <p class="car-name"><a href="">服务项目</a></p>
+                       </li>
+                   </ul> 
+                </div>
+                <div>
+                    <ul class="hcartype clearfix">
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car4.jpg"></a></div>
+                            <p class="car-name"><a href="">运输线路</a></p>
+                        </li>
+                        <li>
+                         <div class="car-pic"><a href=""><img src="images/car1.jpg"></a></div>
+                         <p class="car-name"><a href="">运输线路</a></p>
+                        </li>
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car2.jpg"></a></div>
+                            <p class="car-name"><a href="">运输线路</a></p>
+                        </li>
+                        <li>
+                            <div class="car-pic"><a href=""><img src="images/car3.jpg"></a></div>
+                            <p class="car-name"><a href="">运输线路</a></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -209,57 +251,14 @@
     <!-- build:js js/app.lib.js -->
     <script src="js/jquery-1.7.2.min.js"></script>
     <!-- endbuild -->
-    <!-- <script>
+    <script>
         $(function(){
-           $('#searchText').focus(function(){
-               if($(this).val()=='请输搜索入内容'){
-                   $(this).val('');
-               }
-           });
-            $('#searchText').blur(function() {
-                if($(this).val()==''){
-                    $(this).val('请输搜索入内容');
-                    $(this).removeClass('focus');
-                }else{
-                    $(this).addClass('focus');
-                }
+            $('.tab-head li').click(function(event) {
+               $(this).addClass('current').siblings().removeClass('current');
+               var index = $(this).index();
+               $('.tab-contenth>div').eq(index).addClass('current').siblings().removeClass('current');
             });
-
-            //flash
-            $('.flexslider').flexslider({
-                animation: 'slide',
-                pauseOnHover: true,
-                directionNav: false,
-                slideshowSpeed:3000
-            });
-
-            //tab
-            (function () {
-                $('.tap-head').each(function(index, el) {
-                    if ($(el).hasClass('hover')) {
-                        $(el).on('mouseenter', 'li', function(){
-                            showTab(this);
-                        });
-                    } else {
-                        $(el).on('click', 'li', function(){
-                            showTab(this);
-                        });
-                    }
-                });
-
-                function showTab(el) {
-                    var index = $(el).index();
-                    $(el).addClass('current').siblings().removeClass('current');
-                    $(el).parents('.tap-head').siblings('.tap-body').children('div').eq(index).addClass('current').siblings().removeClass('current');
-                }
-            })();
-
-            // video hover
-            $('.video-list li').mouseenter(function(){
-                $(this).addClass('current').siblings().removeClass('current');
-            });
-            
         });
-    </script> -->
+    </script>
 </body>
 </html>
