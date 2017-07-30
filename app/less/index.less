@@ -257,6 +257,13 @@ body{
 	background: url(../images/sidebg.png) no-repeat top right;
 	background-size: 45%;
 }
+
+.tindent20{
+	text-indent: 20px;
+}
+.tleft{
+	text-align: left !important;
+}
 .head{
 	max-width: 1000px;
 	width: 100%;
@@ -324,6 +331,7 @@ body{
 	left: 0;
 	height: 50px;
 	line-height: 50px;
+	z-index: 100;
 	.dir-left{
 		position: absolute;
 		width: 12px;
@@ -490,6 +498,9 @@ body{
 			margin-top: 10px;
 			li{
 				line-height: 40px;
+				height: 40px;
+				text-overflow:ellipsis;
+
 				.iPic{
 					float: left;
 					margin-right: 5px;
@@ -628,15 +639,40 @@ body{
 					margin-bottom: 8px;
 				}
 			}
+			.active{
+				background: #2a8cff;
+				color:#fff;
+			}
 		}
 		.tab-content{
 			float: none;
 			margin-left: 0;
+			box-sizing: border-box;
+			padding: 0 5px;
 			h2{
+				font-size: 26px;
+				color: #172c45;
+				text-align: center;
+				margin-top: 25px;
+				font-weight: normal;
+				border-bottom: none;
+			}
+			ul.contentul{
+				li {
+					dt{
+						font-weight: normal;
+						font-size: 16px;
+						color:#ff6600;
+					}
+				}
+			}
+			.sub-title{
 				display: none;
 			}
 			.title{
 				text-align: center;
+				font-size: 18px;
+				font-weight: normal;
 			}
 			.car-list{
 				margin-left: 12px;
@@ -659,11 +695,43 @@ body{
 					float: right;
 				}
 			}
+			.about dt{
+				float: none !important;
+				color:#ff6600;
+				font-size: 16px;
+				font-weight: normal;
+			}
+			.introduction dt.contactus{
+				margin: 0;
+			}
+			.cus{
+				.tel{
+					color:#ff6600;
+				}
+			}
+			.lugtit{
+				margin: 0;
+				text-align: left;
+				color:#ff6600;
+			}
+			.title.feature-title{
+				text-align: left;
+				margin-left: 0;
+				color:#ff6600;
+			}
+			ul.featureul li h4{
+				color:#ff6600;
+				font-weight: normal;
+				
+			}
+			.paragraph{
+				text-indent: 0;
+			}
 		}
 	}
 	.wrap-inner{
 		background: #fff;
-		border-radius: 10px;
+		border-radius: 6px;
 		padding-bottom: 5px;
 	}
 	.foot{
