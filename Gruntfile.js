@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			main: {
 			    expand: true,
 			    cwd: '<%= config.app %>',
-			    src: ['images/*', 'index.html', 'css/img/*'],
+			    src: ['images/*', '*.html', 'css/img/*'],
 			    dest: '<%= config.dist %>/'
 			},
 			xcity: {
