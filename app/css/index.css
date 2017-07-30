@@ -1015,6 +1015,9 @@ body {
   .wrap-inner .news a .cir-right img {
     width: 100%;
   }
+  .wrap-inner.indinner {
+    padding-top: 0;
+  }
   .left {
     float: none;
     max-width: 100%;
@@ -1169,5 +1172,11 @@ body {
   }
   .car-name {
     display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  .wrap .side-tab ul li {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
