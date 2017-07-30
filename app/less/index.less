@@ -335,11 +335,15 @@ body{
 	right: 50px;
 	width: 130px;
 	height: 120px;
-	padding-top: 70px;
+	padding-top: 110px;
 	padding-left: 15px;
 	background: url(../images/contactus.png) no-repeat center;
 	background-size: 100%;
 	dl
+		dt{
+			color: #000;
+			font-size: 14px;
+		}
 		dd{
 			margin-left: 0;
 			color: #fff;
@@ -663,6 +667,7 @@ body{
 				display: inline-block;
 				a{
 					color: #fff;
+					font-size: 12px;
 				}
 			}
 		}
@@ -835,21 +840,23 @@ body{
 
 // logistics.less
 .left{
-	max-width: 425px;
+	max-width: 440px;
 	width: 100%;
 	float: left;
+	box-sizing: border-box;
 	h3{
 		font-size: 26px;
 		margin-top: 28px;
 		margin-bottom: 15px;
 	}
-	.news-list{
+	.news-list.newslistl{
 		li{
 			margin-bottom: 21px;
 			dt{
 				font-weight: bold;
 				color: #0873c0;
 				margin-bottom: 16px;
+				font-size: 14px;
 			}
 			dd{
 				.date{
@@ -858,14 +865,22 @@ body{
 					border-right: 1px solid #ddd;
 					padding-top: 20px;
 					padding-bottom: 20px;
+					font-size: 16px;
+					text-align: center;
+					.year{
+						font-size: 12px;
+						color: #666;
+						display: block;
+					}
 				}
 				.lines{
 					float: left;
-					max-width: 375px;
+					max-width: 365px;
 					width: 100%;
 					padding-left: 13px;
 					box-sizing: border-box;
 					line-height: 23px;
+					font-size: 12px;
 					.more{
 						display: block;
 						margin-top: 8px;
@@ -898,17 +913,21 @@ body{
 	max-width: 300px;
 	width: 100%;
 	h3{
-		font-size: 23px;
+		font-size: 26px;
+		color: #000;
 		margin-bottom: 10px;
 		margin-top: 15px;
 	}
 	.newlest{
 		p{
 			line-height: 23px;
+			font-size: 12px;
+			color: #172c45;
 		}
 		.more{
 			display: block;
 			margin-top: 13px;
+			margin-bottom: 16px;
 		}
 	}
 	.shipping-lines{
@@ -935,9 +954,15 @@ body{
 			margin-right: 43px;
 		}
 	}
-	.tab-content{
-		li{
-			display: inline-block;
+	.tab-contenth{
+		max-width: 100%;
+		margin-bottom: 50px;
+		.hcartype{
+			li{
+				display: inline-block;
+				width: 24%;
+				box-sizing: border-box;
+			}
 		}
 	}
 }
