@@ -285,22 +285,42 @@ body {
 }
 .menu .pmenu .items {
   position: relative;
-  display: inline-block;
-  border-left: 1px solid #0d4578;
+  float: left;
+  height: 60px;
+  background: url(../images/menuspli.png) no-repeat;
+  width: 120px;
 }
 .menu .pmenu .items a {
-  padding: 8px 25px;
+  display: block;
+  text-align: center;
   text-decoration: none;
   color: #000;
 }
 .menu .pmenu .items .cmenu {
-  padding-left: 0;
   position: absolute;
-  top: 36px;
+  top: 60px;
   display: none;
+  width: 100%;
 }
 .menu .pmenu .items .cmenu li {
   list-style: none;
+  height: 28px;
+  line-height: 28px;
+  background: #fff;
+  margin-top: 1px;
+}
+.menu .pmenu .items .cmenu li a {
+  display: block;
+  font-size: 14px;
+}
+.menu .pmenu .items .cmenu li:hover {
+  background: #ff6600;
+}
+.menu .pmenu .items:hover .cmenu {
+  display: block;
+}
+.menu .pmenu .items:first-child {
+  background: none;
 }
 .contact {
   position: absolute;
@@ -357,7 +377,6 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 35px;
 }
 .banner img {
   width: 100%;
