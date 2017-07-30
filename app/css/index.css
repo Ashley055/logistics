@@ -413,12 +413,14 @@ body {
   padding: 15px 135px 15px 17px;
   border: 1px solid #cccccc;
   border-bottom: none;
+  cursor: pointer;
 }
 .wrap .side-tab ul li:first-child {
   background-color: #063d76;
   font-size: 16px;
   color: #fff;
   border: none;
+  cursor: default;
 }
 .wrap .side-tab ul li:last-child {
   border-bottom: 1px solid #cccccc;
@@ -991,19 +993,19 @@ body {
   .left h3 {
     display: none;
   }
-  .left .news-list {
+  .left .news-list.newslistl {
     background-color: #fff;
     margin-left: -10px;
     margin-right: -10px;
     padding: 20px 10px;
   }
-  .left .news-list li dt {
+  .left .news-list.newslistl li dt {
     color: #333;
   }
-  .left .news-list li dd .lines {
+  .left .news-list.newslistl li dd .lines {
     max-width: 256px;
   }
-  .left .news-list li dd .lines .more {
+  .left .news-list.newslistl li dd .lines .more {
     display: none;
   }
   .middle {
