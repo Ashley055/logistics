@@ -505,19 +505,11 @@ body {
 .wrap .tab-content .carpic {
   text-align: center;
 }
-.wrap .tab-content .carpic .pre {
-  float: left;
-  margin-right: 75px;
-  margin-top: 160px;
-  cursor: pointer;
+.wrap .tab-content .carpic a {
+  display: block;
 }
 .wrap .tab-content .carpic .pic {
   float: left;
-}
-.wrap .tab-content .carpic .next {
-  float: right;
-  margin-top: 160px;
-  cursor: pointer;
 }
 .wrap .tab-content .carinfo {
   margin-top: 48px;
@@ -993,6 +985,9 @@ body {
     flex: 1;
     text-align: center;
   }
+  .wrap-inner .m-menu ul li a {
+    display: block;
+  }
   .wrap-inner .m-menu ul li .icon {
     display: block;
     width: 41px;
@@ -1008,6 +1003,9 @@ body {
     display: block;
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .wrap-inner .news a {
+    display: block;
   }
   .wrap-inner .news a span {
     padding-top: 12px;
