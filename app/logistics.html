@@ -47,7 +47,7 @@
     <!--头部 end-->
     <!--广告位-->
     <div class="banner">
-        <img src="images/ads.jpg">
+        <img src="images/ads.jpg" style="margin-left:-50px;">
     </div>
     <div class="mbanner">
         <img src="images/mads.jpg">
@@ -172,7 +172,7 @@
         <div class="foot-wrap">
             <div class="tab-head">
                 <ul>
-                    <li class="vehicle" class="current"><a class="m-hide" href="#"></a>运输车型 <em class="dir-right"><img src="images/dir-right.png"></em></li>
+                    <li class="vehicle current"><a class="m-hide" href="#"></a>运输车型 <em class="dir-right"><img src="images/dir-right.png"></em></li>
                     <li class="m-hide">服务项目</li>
                     <li class="m-hide">运输线路</li>
                 </ul>
@@ -254,6 +254,12 @@
             <p>福建鑫平安物流有限公司 网站备案号：ICP备1231548754号 </p>
         </div>
     </div>
+    
+    <div class="code m-hide clearfix">
+        <div class="code-img"></div>  
+        <div class="code-bg"></div>      
+    </div>
+
     <!-- build:js js/app.lib.js -->
     <script src="js/jquery-1.7.2.min.js"></script>
     <!-- endbuild -->
@@ -263,6 +269,20 @@
                $(this).addClass('current').siblings().removeClass('current');
                var index = $(this).index();
                $('.tab-contenth>div').eq(index).addClass('current').siblings().removeClass('current');
+            });
+
+            //codeimg
+            postionCodeimg();
+            function postionCodeimg() {
+                var left = $('.banner').offset().left + $('.banner').width() - 50 - 76 - 160;
+                $('.code').css('left', left);
+                var windowWidth = $(window).width();
+                var codeleft = $('.code').offset().left + 160;
+                var codebgWidth = windowWidth - codeleft;
+                $('.code-bg').width(codebgWidth);
+            }
+            $(window).resize(function(){
+                postionCodeimg();
             });
         });
     </script>

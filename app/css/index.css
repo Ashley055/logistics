@@ -387,6 +387,7 @@ body {
 }
 .banner img {
   width: 100%;
+  vertical-align: top;
 }
 .mbanner {
   display: none;
@@ -877,7 +878,7 @@ body {
   margin-top: 20px;
   margin-left: 20px;
   float: left;
-  max-width: 300px;
+  max-width: 280px;
   width: 100%;
 }
 .right h3 {
@@ -898,7 +899,7 @@ body {
   line-height: 26px;
 }
 .right .shipping-lines ul li a span.line-name {
-  margin-right: 25px;
+  margin-right: 22px;
 }
 .more {
   display: block;
@@ -943,6 +944,21 @@ body {
 }
 .dir-right {
   display: none;
+}
+.code {
+  position: absolute;
+  top: 365px;
+}
+.code .code-img {
+  width: 160px;
+  height: 130px;
+  background: url('../images/codeimg.png') no-repeat;
+  float: left;
+}
+.code .code-bg {
+  background: url('../images/codebg.png');
+  height: 130px;
+  float: left;
 }
 @media screen and (max-width: 1000px) {
   .wrap-inner {
