@@ -476,6 +476,18 @@ body {
 .wrap .tab-content .carpic {
   text-align: center;
 }
+.wrap .tab-content .carpic .pre {
+  float: left;
+  margin-right: 75px;
+  margin-top: 160px;
+}
+.wrap .tab-content .carpic .pic {
+  float: left;
+}
+.wrap .tab-content .carpic .next {
+  float: right;
+  margin-top: 160px;
+}
 .wrap .tab-content .page-list {
   margin: 10px 0 50px 0;
 }
