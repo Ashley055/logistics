@@ -490,18 +490,23 @@ body {
 .wrap .tab-content .news-list li {
   line-height: 40px;
   height: 40px;
-  text-overflow: ellipsis;
+  position: relative;
 }
 .wrap .tab-content .news-list li .iPic {
-  float: left;
+  position: absolute;
   margin-right: 5px;
 }
 .wrap .tab-content .news-list li .news {
-  float: left;
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 .wrap .tab-content .news-list li .news a {
   display: block;
   color: #172c45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 40px;
 }
 .wrap .tab-content .news-list li .news a:hover {
   color: #ff6600;
