@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
-  font-family: "微软雅黑", "microsoft yahei", Arial, sans-serif;
+  font-family: "SimSun", Arial, sans-serif;
 }
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body,
@@ -74,7 +74,7 @@ button,
 input,
 select,
 textarea {
-  font: 500 14px/1.8 "微软雅黑", "microsoft yahei", Arial, sans-serif;
+  font: 500 14px/1.8 "SimSun", Arial, sans-serif;
 }
 /* IE6 Button 宽度自适应 */
 button,
@@ -344,6 +344,7 @@ body{
 	padding-left: 15px;
 	background: url(../images/contactus.png) no-repeat center;
 	background-size: 100%;
+	z-index: 10;
 	dl
 		dt{
 			color: #000;
@@ -436,6 +437,9 @@ body{
 		}
 		.active{
 			color: #ff6600;
+			a {
+				color: #ff6600;
+			}
 		}
 	}
 	.tab-content{
@@ -520,6 +524,7 @@ body{
 		.carpic{
 			text-align: center;
 			position: relative;
+			margin-left: 0px;
 			.flex-prev{
 				width: 27px;
 				height: 45px;
@@ -760,6 +765,11 @@ body{
 				background: #2a8cff;
 				color:#fff;
 			}
+			.active a{
+				color:#fff;
+				text-decoration: none;
+				cursor: default;
+			}
 		}
 		.tab-content{
 			float: none;
@@ -906,6 +916,12 @@ body{
 				color: #0873c0;
 				margin-bottom: 16px;
 				font-size: 14px;
+				a{
+					font-weight: bold;
+					color: #0873c0;
+					margin-bottom: 16px;
+					font-size: 14px;
+				}
 			}
 			dd{
 				.date{
@@ -934,6 +950,10 @@ body{
 						display: block;
 						max-height: 40px;
 						overflow: hidden;
+						a{
+							font-size: 12px;
+							color: #666;
+						}
 					}
 					.more{
 						display: block;
@@ -971,6 +991,10 @@ body{
 		color: #000;
 		margin-bottom: 10px;
 		margin-top: 15px;
+		a {
+			font-size: 26px;
+			color: #000;
+		}
 	}
 	.newlest{
 		p{
@@ -979,6 +1003,10 @@ body{
 			color: #172c45;
 			max-height: 115px;
 			overflow: hidden;
+			a{
+				font-size: 12px;
+				color: #172c45;
+			}
 		}
 	}
 	.shipping-lines{
@@ -1054,6 +1082,11 @@ body{
 	}
 }
 
+@media screen and (min-width: 1001px) {
+	.pc-hide{
+		display: none;
+	}
+}
 // mobile
 @media screen and (max-width: 1000px) {
 	.wrap-inner{
@@ -1297,6 +1330,12 @@ body{
 }
 
 
+
+/*lunbo*/
+.flexslider{position:relative;overflow:hidden;width: 100%; margin-left: -50px;}
+.slides{position:relative;z-index:0;}
+.mflexslider{position:relative;overflow:hidden;width: 100%;}
+
 /*kefu */
 .fl{
 	float: left;
@@ -1304,7 +1343,7 @@ body{
 .fr{
 	float: right;
 }
-.c_meau{ width:211px; height:380px; position:fixed; z-index: 1000;left:50%; margin-left:600px; bottom:-380px; display:none;}
+.c_meau{width:211px; height:380px; position:fixed; z-index: 1000;left:50%; margin-left:600px; bottom:-380px; display:none;}
 .c_meau .fl{ width:125px;}
 .c_meau .fl h4{ width:100%; height:61px; background:url(../images/c_meau_4.png) no-repeat; color:#81511c; font-size:16px; line-height:22px; text-align:center; padding:8px 0; font-weight:bold;}
 .c_meau .fl_o{ background:#fff; margin:-16px 0; padding:10px 0 0 0;}
@@ -1317,8 +1356,40 @@ body{
 .c_meau .fl_o_o dd{ line-height:22px;}
 .c_meau .fl_o{ margin:-16px 0 -11px 0;}
 .c_meau .fr_o {margin: 90px 0 168px 0;}
+.k_phone{ color:#7d7d7d; font-size:14px; }
+.k_phone:hover{text-decoration: none}
+.c_meau{ margin-left:470px; z-index:100;}
+.c_meau .fl h4 font{
+	display: none;
+}
 
-@media screen and (max-device-width: 1366px)
-{
-	.c_meau{ margin-left:470px; z-index:100;}
+@media screen and (max-width: 1000px) {
+	.c_meau{
+		width: 180px;
+		margin-left: -90px;
+		bottom: 50px !important;
+		left:100%;
+	}
+	.c_meau .fl{ width:85px;}
+	.c_meau .fl_o_o{
+		width: 60px;
+	}
+	.k_phone{
+		display: none;
+	}
+	.c_meau .fl h4{
+		background: yellow;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.fl_o > dl:last-child{
+		display: none;
+	}
+	.c_meau .fl>img{
+		display: none;
+	}
+
+	.c_meau .fl h4 font{
+		display: block;
+	}
 }

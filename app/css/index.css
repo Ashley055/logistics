@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
-  font-family: "微软雅黑", "microsoft yahei", Arial, sans-serif;
+  font-family: "SimSun", Arial, sans-serif;
 }
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body,
@@ -74,7 +74,7 @@ button,
 input,
 select,
 textarea {
-  font: 500 14px/1.8 "微软雅黑", "microsoft yahei", Arial, sans-serif;
+  font: 500 14px/1.8 "SimSun", Arial, sans-serif;
 }
 /* IE6 Button 宽度自适应 */
 button,
@@ -338,6 +338,7 @@ body {
   padding-left: 15px;
   background: url(../images/contactus.png) no-repeat center;
   background-size: 100%;
+  z-index: 10;
 }
 .contact dl dt {
   color: #000;
@@ -432,6 +433,9 @@ body {
 .wrap .side-tab .active {
   color: #ff6600;
 }
+.wrap .side-tab .active a {
+  color: #ff6600;
+}
 .wrap .tab-content {
   float: left;
   color: #172c45;
@@ -508,6 +512,7 @@ body {
 .wrap .tab-content .carpic {
   text-align: center;
   position: relative;
+  margin-left: 0px;
 }
 .wrap .tab-content .carpic .flex-prev {
   width: 27px;
@@ -742,6 +747,11 @@ body {
     background: #2a8cff;
     color: #fff;
   }
+  .wrap .side-tab .active a {
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+  }
   .wrap .tab-content {
     float: none;
     margin-left: 0;
@@ -874,6 +884,12 @@ body {
   margin-bottom: 16px;
   font-size: 14px;
 }
+.left .news-list.newslistl li dt a {
+  font-weight: bold;
+  color: #0873c0;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
 .left .news-list.newslistl li dd .date {
   float: left;
   padding-right: 7px;
@@ -901,6 +917,10 @@ body {
   display: block;
   max-height: 40px;
   overflow: hidden;
+}
+.left .news-list.newslistl li dd .lines span a {
+  font-size: 12px;
+  color: #666;
 }
 .left .news-list.newslistl li dd .lines .more {
   display: block;
@@ -933,12 +953,20 @@ body {
   margin-bottom: 10px;
   margin-top: 15px;
 }
+.right h3 a {
+  font-size: 26px;
+  color: #000;
+}
 .right .newlest p {
   line-height: 23px;
   font-size: 12px;
   color: #172c45;
   max-height: 115px;
   overflow: hidden;
+}
+.right .newlest p a {
+  font-size: 12px;
+  color: #172c45;
 }
 .right .shipping-lines ul li a {
   font-size: 12px;
@@ -1005,6 +1033,11 @@ body {
   background: url('../images/codebg.png');
   height: 130px;
   float: left;
+}
+@media screen and (min-width: 1001px) {
+  .pc-hide {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) {
   .wrap-inner {
@@ -1235,6 +1268,22 @@ body {
     padding-right: 12px;
   }
 }
+/*lunbo*/
+.flexslider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-left: -50px;
+}
+.slides {
+  position: relative;
+  z-index: 0;
+}
+.mflexslider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 /*kefu */
 .fl {
   float: left;
@@ -1306,9 +1355,48 @@ body {
 .c_meau .fr_o {
   margin: 90px 0 168px 0;
 }
-@media screen and (max-device-width: 1366px) {
+.k_phone {
+  color: #7d7d7d;
+  font-size: 14px;
+}
+.k_phone:hover {
+  text-decoration: none;
+}
+.c_meau {
+  margin-left: 470px;
+  z-index: 100;
+}
+.c_meau .fl h4 font {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
   .c_meau {
-    margin-left: 470px;
-    z-index: 100;
+    width: 180px;
+    margin-left: -90px;
+    bottom: 50px !important;
+    left: 100%;
+  }
+  .c_meau .fl {
+    width: 85px;
+  }
+  .c_meau .fl_o_o {
+    width: 60px;
+  }
+  .k_phone {
+    display: none;
+  }
+  .c_meau .fl h4 {
+    background: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .fl_o > dl:last-child {
+    display: none;
+  }
+  .c_meau .fl > img {
+    display: none;
+  }
+  .c_meau .fl h4 font {
+    display: block;
   }
 }
